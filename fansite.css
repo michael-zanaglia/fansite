@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/**************INDEX**************/
+
+/* Background Part */
+.first_part {
+    background-image: url(img/fakerindex_1.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* 100% de mon ecran */
+    height: 100vh;
+}
+.bloc {
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(5, 4, 4,0.75);
+    width: 100vmax;
+    height: 100vh;
+}
+/* Background Part */
+
+/* Logo */
+.logo {
+    position: absolute;
+    width: 60px;
+    height: auto;
+    top: 5%;
+    left: 2%;
+}
+/* Logo */
+
+/* Header */
+.head {
+    width: 80%;
+    min-height: 60px;
+    background: rgba(80,80,80,0.05);
+    border-radius: 50px;
+}
+.header_absolute {
+    position: absolute;
+    top: 2%;
+    left: 19%;
+}
+.header_cont {
+    margin: 20px 6% 0px 6%;
+}
+.header_cont ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: #fff; /* Couleur du texte */
+    font-size: 18px; /* Taille du texte */
+    font-weight: bold; /* Gras */
+}
+.header_cont li {
+    list-style: none;
+}
+.header_cont a {
+   text-decoration: none;
+   color: white;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.header_cont li:hover {
+    background-color: #FFFAA0;
+    border-radius: 15px;
+    transition: 1.25s;
+    padding: 5px;
+}
+#rouge {
+    color: red;
+}
+/* Header */
+    
+/* Footer */
+footer {
+    width: 95%;
+    min-height: 60px;
+    background: rgba(80, 80, 80, 0.05);
+    border-radius: 50px;
+}
+.footer_cont {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-size: 15px; /* Taille du texte */
+    font-weight: bold; /* Gras */
+}
+.footer_cont li {
+    list-style: none;
+}
+
+.footer_cont a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.footer_absolute {
+    position: absolute;
+    bottom: 0%;
+    left: 2%;
+}
+.footer_div_item {
+    display: flex;
+    justify-content: space-evenly;
+}
+#foot_img {
+    width: 20px;
+    height: auto;
+}
+h3 {
+    color: white;
+    font-family: font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+}
+/* Footer */
+
+
+@media screen and (max-width : 410px) {
+    header {
+        width: 88%;
+        margin: 0px -9px;
+    }
+    .header_absolute {
+        left: 10%;
+    }
+    .header_cont {
+        margin: 20px 6% 0px 6%;
+    }
+    .logo {
+        width: 160px;
+        height: auto;
+        top: 45%;
+        left: 26%;
+    }
+}
+/**************INDEX**************/
+
+li {
+    list-style: none;
+}
+
+/**************PRESENTATION**************/
+
+/* Arriere-plan */
+.background {
+    background-image: url(img/bgfaker.png);
+    height: 100%;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+/* Arriere-plan */
+
+/* Header */
+.presentation {
+    width: 100%;
+    min-height: 60px;
+    background: rgba(0,0,0,0.8);
+    position: fixed;
+    margin-left: 0px;
+    margin-top: -67px;
+    z-index: 1;
+}
+.header_cont_present ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: #fff; /* Couleur du texte */
+    font-size: 18px; /* Taille du texte */
+    font-weight: bold; /* Gras */
+}
+.header_cont_present {
+    margin: 15px 6% 0px 6%;
+}
+.header_cont_present li {
+    list-style: none;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.header_cont_present a {
+   text-decoration: none;
+   color: white;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.header_cont_present li:hover {
+    background-color: #FFFAA0;
+    border-radius: 10px;
+}
+/* Header */
+
+
+/* Main */
+.overlay_main {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(5, 4, 4,0.75);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.img_main_present {
+    border-width: 3px;
+    border-style: inset;
+    border-color: red indigo indigo red;
+    border-radius: 5px;
+    max-width: 80%;
+    height: auto; 
+    position: relative;
+    left: 9%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 15px;
+    padding: 5%
+}
+.item_img {
+    align-self: center;
+}
+.item {
+    position: relative;
+    background-color: rgba(183, 14, 14, 0.2);
+    margin: 5%;
+    margin-top: 20%;
+    border-radius: 15px;
+    backdrop-filter: blur(4px);
+}
+.container p {
+    padding-top: 10px;
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2 {
+    text-align: center;
+    color: whitesmoke;
+    text-decoration: underline;
+}
+.item_carriere li {
+    padding-top: 5px;
+}
+li h3 {
+    color: whitesmoke;
+    text-decoration: underline;
+}
+/* Main */
+
+/* Footer */
+.footer_absolute_present {
+    position: relative;
+}
+
+
+@media screen and (min-width: 1000px){
+    #m {
+        margin-top: -225px;
+    }
+}
+
+@media screen and (max-width: 1080px) and (orientation: landscape){
+    #m {
+        margin-top: -158px;
+    }
+    
+}
+    
+/**************PRESENTATION**************/
+
+/**************ACTUALITE**************/
+
+i {
+    color: yellow;
+}
+.item_video {
+    align-self: center;
+    width: "100%";
+}
+video {
+    border-width: 3px;
+    border-style: inset;
+    border-color: red indigo indigo red;
+    border-radius: 5px;
+}
+blockquote {
+   width: 100%;
+}
+
+    
+
+/**************ACTUALITE**************/
+
+/**************CONTACT**************/
+.cont {
+    padding: 0.5rem 1rem;
+    background-color: rgba(230, 230, 230, 0.6);
+    font-size: 1rem;
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+.cont:hover {
+    background-color: rgba(80, 80, 80, 0.7);
+}
+#msg {
+    padding: 0.5rem 1rem;
+    background-color: rgba(230, 230, 230, 0.6);
+    font-size: 1rem;
+    border: 2px solid rgba(0, 0, 0, 0);
+    min-height: 150px;
+    text-align: center;
+}
+form input {
+    margin-bottom: 10px;
+}
+
+form h2 {
+    padding: 10px ;
+}
+
+/**************CONTACT**************/
